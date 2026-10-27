@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Síntomas y Tipos | Ansiedad</title>
+  
+  <!-- Tailwind CSS por CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ["Instrument Serif", "Georgia", "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+          colors: {
+            background: "hsl(45 20% 98%)",
+            foreground: "hsl(0 0% 10%)",
+            cream: { DEFAULT: "hsl(45 20% 98%)", dark: "hsl(45 15% 96%)", darker: "hsl(40 12% 93%)" },
+            ink: { DEFAULT: "hsl(0 0% 10%)", light: "hsl(0 0% 29%)", muted: "hsl(0 0% 48%)" },
+            divider: "hsl(40 10% 88%)"
+          },
+          transitionTimingFunction: {
+            editorial: "cubic-bezier(0.16, 1, 0.3, 1)",
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      body { @apply bg-background text-foreground font-sans antialiased; scroll-behavior: smooth; }
+      h1, h2, h3, h4 { @apply font-serif tracking-tight; }
+      h1 { @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal leading-[1.1]; }
+      h2 { @apply text-3xl md:text-4xl lg:text-5xl font-normal leading-[1.15]; }
+      h3 { @apply text-2xl md:text-3xl font-normal leading-[1.2]; }
+      p { @apply text-base md:text-lg leading-relaxed text-ink-light; }
+      
+      .container-editorial { @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-20; }
+      .section-padding { @apply py-16 md:py-24 lg:py-32; }
+      .eyebrow { @apply text-xs md:text-sm font-sans font-medium uppercase tracking-[0.15em] text-ink-muted; }
+      .arrow-link { @apply inline-flex items-center gap-2 text-sm font-medium tracking-wide transition-all duration-300; }
+      .arrow-link:hover svg { @apply translate-x-1; }
+      
+      .scroll-reveal { @apply opacity-0 translate-y-8 transition-all duration-700 ease-editorial; }
+      .scroll-reveal.is-visible { @apply opacity-100 translate-y-0; }
+    }
+  </style>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <!-- Barra de Navegación Superior Ajustada -->
+<!-- Encabezado con animación de opacidad y menú adaptable -->
+<header class="sticky top-0 z-50 w-full py-5 px-6 md:px-12 bg-white/50 backdrop-blur-md border-b border-gray-100 transition-all duration-300 scroll-reveal">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    
+    <!-- Logo protegido para no dividirse -->
+    <a href="index.html" class="font-serif font-bold text-xl text-ink whitespace-nowrap">
+      Salud Mental
+    </a>
+
+    <!-- Menú de navegación -->
+    
+  
+<nav class="flex items-center space-x-4 text-xs md:text-sm">
+  <a href="index.html" class="hover:opacity-75 transition-opacity">Inicio</a>
+  <a href="about.html" class="hover:opacity-75 transition-opacity">Síntomas y Tipos</a>
+  <a href="work.html" class="hover:opacity-75 transition-opacity">Ejercicios</a>
+  <a href="contact.html" class="hover:opacity-75 transition-opacity">Ayuda</a>
+</nav>
+
+  </div>
+</header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="pt-32 md:pt-40 pb-16 md:pb-24">
+      <div class="container-editorial">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div class="lg:col-span-7">
+            <p class="scroll-reveal eyebrow mb-6">Conoce los detalles</p>
+            <h1 class="scroll-reveal text-ink" style="transition-delay: 100ms;">
+              Síntomas y Tipos de Ansiedad.
+            </h1>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="scroll-reveal aspect-[4/5] overflow-hidden" style="transition-delay: 200ms;">
+              <img src="./assets/Ansiedad-main.jpg" alt="Persona meditando o en calma" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section-padding border-t border-divider">
+      <div class="container-editorial">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <!-- Columna del texto -->
+          <div class="lg:col-span-7">
+            <p class="scroll-reveal text-xl md:text-2xl text-ink leading-relaxed mb-8 first-letter:text-8xl md:first-letter:text-9xl first-letter:font-serif first-letter:float-left first-letter:mr-4 first-letter:mt-0 first-letter:leading-[0.75]">
+              No todos experimentamos la ansiedad de la misma manera. Es una condición compleja que puede disfrazarse de muchas formas, desde molestias físicas hasta pensamientos intrusivos que no nos dejan dormir.
+            </p>
+            <p class="scroll-reveal text-ink-light mb-8" style="transition-delay: 100ms;">
+              Para poder manejarla, el primer paso es aprender a identificarla. Reconocer cómo se manifiesta en tu mente y en tu cuerpo te da el poder de actuar antes de que la sensación te abrume por completo.
+            </p>
+            <p class="scroll-reveal text-ink-light" style="transition-delay: 200ms;">
+              Existen varios trastornos clasificados dentro de la ansiedad, cada uno con sus propias características y desencadenantes. Comprender en qué se diferencian es vital para encontrar las técnicas de relajación y el apoyo adecuado.
+            </p>
+          </div>
+          
+          <!-- Columna de la imagen -->
+          <div class="lg:col-span-5">
+            <div class="scroll-reveal aspect-[320xp] overflow-hidden bg-cream-darker shadow-lg" style="transition-delay: 300ms;">
+              <img src="./assets/gallery/gallery.jpg" alt="Reflexión y calma" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tipos de Ansiedad (Values convertidos) -->
+    <section class="section-padding bg-cream-dark">
+      <div class="container-editorial">
+        <p class="scroll-reveal eyebrow mb-16 md:mb-20">Clasificación</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+          <div class="scroll-reveal" style="transition-delay: 0ms;">
+            <span class="text-sm text-ink-muted tracking-wide">01</span>
+            <h3 class="font-serif text-2xl text-ink mt-4 mb-4">Trastorno de Ansiedad Generalizada (TAG)</h3>
+            <p class="text-ink-light">Se caracteriza por una preocupación persistente y excesiva por actividades o eventos cotidianos. La preocupación es desproporcionada a la situación actual.</p>
+          </div>
+          <div class="scroll-reveal" style="transition-delay: 100ms;">
+            <span class="text-sm text-ink-muted tracking-wide">02</span>
+            <h3 class="font-serif text-2xl text-ink mt-4 mb-4">Trastorno de Pánico</h3>
+            <p class="text-ink-light">Episodios repetidos de sentimientos repentinos de ansiedad intensa o terror que alcanzan un pico en minutos. Suelen acompañarse de palpitaciones y dificultad para respirar.</p>
+          </div>
+          <div class="scroll-reveal" style="transition-delay: 200ms;">
+            <span class="text-sm text-ink-muted tracking-wide">03</span>
+            <h3 class="font-serif text-2xl text-ink mt-4 mb-4">Ansiedad Social</h3>
+            <p class="text-ink-light">Miedo intenso, ansiedad y evasión de situaciones sociales debido a sentimientos de vergüenza, timidez y preocupación por ser juzgado negativamente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Síntomas Comunes (Recognition convertido) -->
+    <section class="section-padding border-t border-divider">
+      <div class="container-editorial">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div class="lg:col-span-4 scroll-reveal">
+            <p class="eyebrow mb-4">Identificación</p>
+            <h2 class="text-ink">Síntomas Comunes</h2>
+          </div>
+          <div class="lg:col-span-7 lg:col-start-6">
+            <div class="divide-y divide-divider">
+              <!-- Síntoma 1 -->
+              <div class="scroll-reveal py-6 flex items-center justify-between" style="transition-delay: 0ms;">
+                <div>
+                  <h4 class="font-serif text-lg text-ink">Síntomas Físicos</h4>
+                  <p class="text-sm text-ink-muted">Tensión muscular, sudoración, temblores y mareos.</p>
+                </div>
+              </div>
+              <!-- Síntoma 2 -->
+              <div class="scroll-reveal py-6 flex items-center justify-between" style="transition-delay: 50ms;">
+                <div>
+                  <h4 class="font-serif text-lg text-ink">Síntomas Psicológicos</h4>
+                  <p class="text-sm text-ink-muted">Inquietud, dificultad para concentrarse y miedo a perder el control.</p>
+                </div>
+              </div>
+              <!-- Síntoma 3 -->
+              <div class="scroll-reveal py-6 flex items-center justify-between" style="transition-delay: 100ms;">
+                <div>
+                  <h4 class="font-serif text-lg text-ink">Síntomas Conductuales</h4>
+                  <p class="text-sm text-ink-muted">Evitación de ciertas situaciones, hipervigilancia y alteraciones del sueño.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuándo buscar ayuda (Personal convertido) -->
+    <section class="section-padding bg-cream-dark">
+      <div class="container-editorial">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div class="lg:col-span-6">
+            <div class="scroll-reveal aspect-[16/10] overflow-hidden">
+              <img src="./assets/workspace.jpg" alt="Espacio tranquilo" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="lg:col-span-5 lg:col-start-8">
+            <p class="scroll-reveal eyebrow mb-4" style="transition-delay: 100ms;">Importante</p>
+            <p class="scroll-reveal text-ink-light" style="transition-delay: 200ms;">
+              Sentir ansiedad de vez en cuando es normal, pero si notas que tus preocupaciones interfieren con tu trabajo, tus relaciones o tu felicidad general, es momento de actuar. Reconocer el problema es el primer paso hacia el bienestar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding bg-cream-darker">
+      <div class="container-editorial">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="scroll-reveal text-ink mb-6">Toma el control.</h2>
+          <p class="scroll-reveal text-ink-light mb-10 max-w-xl mx-auto" style="transition-delay: 100ms;">
+            Existen muchas herramientas prácticas que puedes utilizar día a día para gestionar tus niveles de ansiedad de forma efectiva.
+          </p>
+          <div class="scroll-reveal" style="transition-delay: 200ms;">
+            <a href="work.html" class="inline-flex items-center gap-2 bg-ink text-white px-6 py-3 rounded-full hover:bg-ink-light transition-colors">
+              Explorar Ejercicios
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script para la animación -->
+  <script>
+    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+      document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
