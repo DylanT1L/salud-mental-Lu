@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetivos | Salud Mental</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F9F8F6',
+            'cream-dark': '#F0EFEB',
+            ink: '#1A1A1A',
+            divider: '#E5E2DC'
+          },
+          fontFamily: {
+            serif: ['Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-ink selection:text-cream">
+
+  <!-- Encabezado Fijo con el Menú Actualizado -->
+  <!-- Encabezado fijo, translúcido con difuminado y menú con Objetivos -->
+<header class="sticky top-0 z-50 w-full py-5 px-6 md:px-12 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    
+    <!-- Logo -->
+    <a href="index.html" class="font-serif font-bold text-xl text-ink whitespace-nowrap">
+      Salud Mental
+    </a>
+
+    <!-- Menú de navegación -->
+    <nav class="hidden md:flex items-center space-x-8 text-sm">
+      <a href="index.html" class="hover:opacity-75 transition-opacity">Inicio</a>
+      <a href="about.html" class="hover:opacity-75 transition-opacity">Síntomas y Tipos</a>
+      <a href="work.html" class="hover:opacity-75 transition-opacity">Ejercicios</a>
+      <a href="objetivos.html" class="hover:opacity-75 transition-opacity">Objetivos</a>
+      <a href="contact.html" class="hover:opacity-75 transition-opacity">Ayuda</a>
+    </nav>
+
+  </div>
+</header>
+
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección Hero de Objetivos -->
+    <section class="pt-24 md:pt-32 pb-16 md:pb-24 px-6 md:px-12">
+      <div class="max-w-4xl mx-auto">
+        <span class="text-xs uppercase tracking-widest text-gray-500 font-semibold block mb-4">PROPÓSITO DEL PROYECTO</span>
+        <h1 class="font-serif text-4xl md:text-6xl font-normal leading-tight mb-8">
+          Objetivos del Sitio Web
+        </h1>
+        
+        <!-- Tarjeta de información principal -->
+        <div class="bg-white p-8 md:p-12 rounded-2xl border border-divider shadow-sm space-y-6 text-lg leading-relaxed text-gray-700">
+          <p>
+            El objetivo de este sitio web es <strong>brindar información clara, accesible y libre de estigmas sobre la ansiedad a jóvenes y adultos jóvenes</strong>, con la finalidad de que puedan comprender qué es la ansiedad, por qué ocurre y cómo se manifiesta en los niveles físico, mental y emocional.
+          </p>
+          <p>
+            Buscamos que los usuarios aprendan a reconocer sus propias señales a tiempo y dejen de interpretarlas como un defecto personal o una exageración. Asimismo, se ofrecen <strong>herramientas prácticas y sencillas de manejo</strong> como técnicas de respiración, relajación y organización del pensamiento que las personas puedan aplicar en su vida cotidiana para reducir el malestar cuando aparece.
+          </p>
+          <p>
+            El portal también promueve hábitos protectores relacionados con el sueño, la actividad física y el uso de redes sociales, pretendiendo funcionar como un <strong>puente hacia la ayuda profesional</strong>, normalizando la idea de pedir apoyo y orientando a quien lo necesite sobre dónde acudir.
+          </p>
+          <p class="text-sm text-gray-500 italic pt-4 border-t border-divider">
+            * Todo ello desde un enfoque psicoeducativo y preventivo que no sustituye la atención psicológica, sino que la complementa y la facilita, contribuyendo a que la comunidad estudiantil cuente con un recurso cercano y confiable que le permita cuidar su salud mental de manera informada y autónoma.
+          </p>
+        </div>
+
+        <!-- Sección de Público Dirigido -->
+        <div class="mt-12 bg-cream-dark p-8 rounded-2xl border border-divider">
+          <h2 class="font-serif text-2xl mb-3">Grupo al que va dirigido</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Adolescentes y adultos jóvenes de <strong>15 a 29 años</strong>, con especial enfoque en <strong>estudiantes de bachillerato y universidad</strong> de la comunidad estudiantil.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página con información breve del objetivo -->
+  <footer class="bg-white border-t border-divider py-12 px-6 md:px-12 mt-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <h3 class="font-serif font-bold text-lg mb-1">Salud Mental • Proyecto Universitario</h3>
+        <p class="text-sm text-gray-600 max-w-md">
+          Un espacio creado para informar, prevenir y acercar herramientas de bienestar emocional a los jóvenes de nuestra comunidad.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
