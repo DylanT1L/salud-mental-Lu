@@ -342,58 +342,6 @@
   </div>
 </section>
 
-<!-- Script de Interacción y Conteo de Aciertos -->
-<script>
-  let aciertos = 0;
-  const contestadas = {};
-
-  function actualizarPuntaje(id, esCorrecto) {
-    if (!contestadas[id] && esCorrecto) {
-      contestadas[id] = true;
-      aciertos++;
-      document.getElementById('puntaje-total').textContent = aciertos;
-    }
-  }
-
-  function evaluarVF(id, respuestaReal, eleccion) {
-    const span = document.querySelector(`.res-vf-${id}`);
-    if (eleccion === respuestaReal) {
-      span.textContent = "¡Correcto! 🎉";
-      span.className = `res-vf-${id} text-sm font-semibold ml-2 text-green-600`;
-      actualizarPuntaje('vf-' + id, true);
-    } else {
-      span.textContent = "Incorrecto, intenta otra vez 💡";
-      span.className = `res-vf-${id} text-sm font-semibold ml-2 text-red-650`;
-    }
-  }
-
-  function evaluarFrase(id, eleccion) {
-    const span = document.querySelector(`.res-frase-${id}`);
-    const correctas = { 1: 'respuesta', 2: 'profundo' };
-    
-    if (eleccion === correctas[id]) {
-      span.textContent = "¡Correcto! 🎉";
-      span.className = `res-frase-${id} text-sm font-semibold ml-2 text-green-600`;
-      actualizarPuntaje('frase-' + id, true);
-    } else {
-      span.textContent = "Incorrecto 💡";
-      span.className = `res-frase-${id} text-sm font-semibold ml-2 text-red-650`;
-    }
-  }
-
-  function evaluarClasif(id, eleccion) {
-    const span = document.querySelector(`.res-clasif-${id}`);
-    const correctas = { 1: 'si', 2: 'no' };
-    
-    if (eleccion === correctas[id]) {
-      span.textContent = "¡Correcto! 🎉";
-      span.className = `res-clasif-${id} text-sm font-semibold ml-2 text-green-600`;
-      actualizarPuntaje('clasif-' + id, true);
-    } else {
-      span.textContent = "Incorrecto 💡";
-      span.className = `res-clasif-${id} text-sm font-semibold ml-2 text-red-650`;
-    }
-  }
 </script>
   <script>
     lucide.createIcons();
