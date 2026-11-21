@@ -71,64 +71,45 @@
         </div>
       </div>
     </section>
-
-    <!-- Unidades Didácticas (Estructura de 4 horas) -->
-    <section class="py-14 px-6 md:px-12 bg-white border-t border-divider">
+<!-- Video de Introducción del Curso (YouTube) -->
+<!-- Video de Introducción del Curso (Archivo local MP4) -->
+    <section class="py-14 px-6 md:px-12 bg-cream border-t border-divider" id="video-introduccion">
       <div class="max-w-5xl mx-auto">
-        <span class="text-xs uppercase tracking-widest text-gray-500 font-semibold block mb-2">ESTRUCTURA DEL PROGRAMA</span>
-        <h2 class="font-serif text-3xl font-normal mb-8">Unidades didácticas y actividades</h2>
+        <span class="text-xs uppercase tracking-widest text-gray-500 font-semibold block mb-2">RECURSO AUDIOVISUAL • 10 MIN 34 S</span>
+        <h2 class="font-serif text-3xl font-normal mb-3">Video de introducción: Todo lo que necesitas saber sobre la ansiedad</h2>
+        <p class="text-gray-700 leading-relaxed mb-8 max-w-3xl">
+          Material audiovisual de apoyo para contextualizar qué es la ansiedad, cómo funciona como respuesta de alerta ante situaciones futuras o exigencias cotidianas, qué formas puede adoptar y cuándo es importante acudir con profesionales.
+        </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Unidad 1 -->
-          <div class="bg-cream p-6 rounded-2xl border border-divider">
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-semibold uppercase tracking-wider text-gray-500">Unidad 1</span>
-              <span class="text-xs bg-white px-3 py-1 rounded-full border border-divider font-medium">50 min</span>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          
+          <!-- Reproductor local HTML5 adaptable -->
+          <div class="lg:col-span-2 bg-white p-3 rounded-2xl border border-divider shadow-sm">
+            <div class="aspect-video w-full rounded-xl overflow-hidden bg-ink">
+              <video controls preload="metadata" playsinline class="w-full h-full object-contain bg-ink">
+                <source src="videos/introduccion-ansiedad.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video HTML5.
+              </video>
             </div>
-            <h3 class="font-serif text-xl mb-2">Comprender la ansiedad</h3>
-            <p class="text-sm text-gray-700 leading-relaxed mb-3">
-              Concepto, función adaptativa de alerta y diferencia entre reacciones cotidianas ocasionales y señales que requieren atención profesional.
-            </p>
-            <p class="text-xs text-gray-500"><strong>Productos:</strong> Nube de ideas diagnóstica y cuadro de análisis de casos cotidianos.</p>
           </div>
 
-          <!-- Unidad 2 -->
-          <div class="bg-cream p-6 rounded-2xl border border-divider">
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-semibold uppercase tracking-wider text-gray-500">Unidad 2</span>
-              <span class="text-xs bg-white px-3 py-1 rounded-full border border-divider font-medium">45 min</span>
-            </div>
-            <h3 class="font-serif text-xl mb-2">Reconocer manifestaciones</h3>
-            <p class="text-sm text-gray-700 leading-relaxed mb-3">
-              Identificación de señales físicas (tensión, palpitaciones), emocionales (inquietud, miedo) y cognitivas (preocupación constante, dificultad para concentrarse), además de factores desencadenantes.
+          <!-- Guía estructurada del video -->
+          <div class="bg-white p-6 rounded-2xl border border-divider space-y-4">
+            <h3 class="font-serif text-xl">Guía de temas en el video</h3>
+            <ul class="space-y-3 text-sm text-gray-700 leading-relaxed">
+              <li>
+                <strong class="text-ink">Concepto y función (0:00):</strong> Diferencia entre preocupación cotidiana, miedo ante una amenaza inmediata y ansiedad orientada a eventos futuros, así como su utilidad para prepararnos (como ante un examen).
+              </li>
+              <li>
+                <strong class="text-ink">Manifestaciones y cuadros (2:18):</strong> Revisión general de cómo se presentan los cuadros descritos en el DSM-5 (ansiedad generalizada, pánico, fobias específicas, agorafobia, ansiedad social, mutismo selectivo y ansiedad por separación).
+              </li>
+              <li>
+                <strong class="text-ink">Factores y atención (8:08):</strong> Factores biológicos, familiares, traumáticos o de estrés prolongado, y el papel de la psicoterapia y la valoración médica profesional.
+              </li>
+            </ul>
+            <p class="text-xs text-gray-500 pt-2 border-t border-divider">
+              Recurso educativo de apoyo: no sustituye una valoración diagnóstica ni atención psicológica o médica profesional.
             </p>
-            <p class="text-xs text-gray-500"><strong>Producto:</strong> Clasificación de señales y factores (Ponderación: 20%).</p>
-          </div>
-
-          <!-- Unidad 3 -->
-          <div class="bg-cream p-6 rounded-2xl border border-divider">
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-semibold uppercase tracking-wider text-gray-500">Unidad 3</span>
-              <span class="text-xs bg-white px-3 py-1 rounded-full border border-divider font-medium">70 min</span>
-            </div>
-            <h3 class="font-serif text-xl mb-2">Herramientas generales de afrontamiento</h3>
-            <p class="text-sm text-gray-700 leading-relaxed mb-3">
-              Práctica opcional de respiración pausada y cómoda sin forzarla, anclaje sensorial al presente, división de tareas en pasos pequeños, pausas y hábitos de descanso.
-            </p>
-            <p class="text-xs text-gray-500"><strong>Producto:</strong> Tarjeta personal de estrategias (Ponderación: 20%).</p>
-          </div>
-
-          <!-- Unidad 4 -->
-          <div class="bg-cream p-6 rounded-2xl border border-divider">
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-semibold uppercase tracking-wider text-gray-500">Unidad 4</span>
-              <span class="text-xs bg-white px-3 py-1 rounded-full border border-divider font-medium">75 min</span>
-            </div>
-            <h3 class="font-serif text-xl mb-2">Redes de apoyo y evaluación</h3>
-            <p class="text-sm text-gray-700 leading-relaxed mb-3">
-              Cómo acompañar sin juzgar ni minimizar, directorio institucional, foro virtual colaborativo y cuestionario de gamificación de 10 reactivos.
-            </p>
-            <p class="text-xs text-gray-500"><strong>Productos:</strong> Plan de apoyo (20%), Foro virtual (25%) y Reto interactivo (15%).</p>
           </div>
         </div>
       </div>
